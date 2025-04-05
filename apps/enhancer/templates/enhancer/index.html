@@ -1,0 +1,15 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+    <h1>Melhoria de imagem</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="file">
+        <button type="submit">Enviar imagem</button>
+    </form>
+
+{% endblock content %}
